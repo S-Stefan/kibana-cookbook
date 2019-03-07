@@ -6,7 +6,10 @@ description 'Installs/Configures kibana'
 long_description 'Installs/Configures kibana'
 version '0.1.0'
 chef_version '>= 13.0'
-
+depends 'apt'
+depends 'ark'
+depends 'build-essential'
+depends 'nginx'
 # The `issues_url` points to the location where issues for this cookbook are
 # tracked.  A `View Issues` link will be displayed on this cookbook's page when
 # uploaded to a Supermarket.
